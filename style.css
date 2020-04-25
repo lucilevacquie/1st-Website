@@ -1,0 +1,156 @@
+body{
+    background:url('asset/lightpaperfibers/lightpaperfibers_@2X.png');
+    width:100%;
+    font-family: 'Antic Slab', serif;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+@media(max-width:500px){
+    #navbar{
+        flex-direction: column;
+    }
+}
+.lucile-vacquie-title{
+    margin: auto;
+    widows: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgba(252, 192, 119, 0.5);
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-image{
+    width: 100%;
+    padding: 2rem 20%;
+    box-sizing: border-box;
+}
+.mySlide {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor:pointer;
+    height:15px;
+    width:15px;
+    margin:0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display:inline-block;
+    transition:background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4;}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: 0.4;}
+    to{opacity: 1;}
+}
+.highlight-link{
+    background-color:rgba(252, 135, 119, 0.5);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding:0 2px 0 2px;
+}
+
+.send-button{
+    background-color: gray;
+    color:whitesmoke;
+    font-size: 24px;
+    margin:auto;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+}
+.vertical-align-msg{
+    display: flex;
+    align-content: inherit;
+}
+
+.accordion-wrapper{
+    width: 70%;
+    margin:auto;
+}
+.accordion{
+    background-color:rgba(255, 236, 140, 0.7);
+    color:black;
+    font-family: 'Antic Slab', serif;
+    font-size: 1rem;
+    text-align: center;
+    cursor:pointer;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover{
+    background-color:rgba(255, 210, 87, 0.7);
+}
+.panel{
+    padding:0 18px;
+    display: none;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.title-uni{
+    text-align: center;
+}

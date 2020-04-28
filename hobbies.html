@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js'></script>
+    <title>Interests</title>
+    <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+</head>
+
+<body>
+    <nav id='navbar'>
+        <a class='aboutme-title'
+        href='index.html'>
+        <img src="./handwriting/about-me-title-2.png"
+        width="200px">
+        </a>
+        <a class='experience-title'
+        href='experiences.html'>
+        <img src='./handwriting/experiences-title-2.png'
+        width="200px">
+        </a>
+        <a class='education-title'
+        href='education.html'>
+        <img src='./handwriting/education-title-2.png'
+        width='200px'>
+        </a>
+        <a class='hobbies-title'
+        href='hobbies.html'>
+        <img src='./handwriting/hobbies-title2.png'
+        width="150px">
+        </a>
+        <a class='contact-title'
+        href='contact.html'>
+        <img src='./handwriting/contact-title-2.png'
+        width="150px">
+        </a>
+    </nav>
+
+    <div class='subtitles'>
+        Painting and drawing
+    </div>
+
+    <div class='slideshow-container' id="paint">
+        <div class='mySlides fade'>
+            <img class="slideshow-image" 
+            src="./asset/DSC_0610.jpg">
+        </div>
+        <div class='mySlides fade flowerInNight'>
+            <img class='slideshow-image'
+            src="./asset/20200426_190123.jpg">
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/20200418_135122.jpg">
+        </div>
+        <div class='mySlides fade deer'>
+            <img class='slideshow-image'
+            src="./asset/IMG-20200427-WA0001-2.jpg">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 'paint')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'paint')">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0, 'paint')"></span>
+            <span class="dot" onclick="currentSlide(1, 'paint')"></span>
+            <span class="dot" onclick="currentSlide(2, 'paint')"></span>
+            <span class="dot" onclick="currentSlide(3, 'paint')"></span>
+        </div>
+    </div>
+
+    <br>
+
+    <div class='subtitles'>
+        Traveling 
+    </div>
+    <div class='slideshow-container' id="travel">
+        <div class='mySlides fade'>
+            <img class="slideshow-image" 
+            src="./handwriting/amsterdam2.png">
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./handwriting/berlin-mur2.png">
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./handwriting/berlin2.png">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 'travel')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'travel')">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(1, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(2, 'travel')"></span>
+        </div>
+    </div>    
+</body>
+</html>

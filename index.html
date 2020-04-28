@@ -5,12 +5,8 @@
     <script src='script.js'></script>
     <title>Lucile Homepage</title>
     <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
-    <style>
-    body {
-        font-family: 'Antic Slab';
-    }
-    </style>
 </head>
+
 <body>
     <div class="lucile-vacquie-title">
         <img src="./handwriting/lucile-vacquie-title.png"
@@ -32,13 +28,19 @@
         <img src='./handwriting/education-title-2.png'
         width='200px'>
         </a>
+        <a class='hobbies-title'
+        href='hobbies.html'>
+        <img src='./handwriting/hobbies-title2.png'
+        width="150px">
+        </a>
         <a class='contact-title'
         href='contact.html'>
         <img src='./handwriting/contact-title-2.png'
         width="150px">
         </a>
     </nav>
-    <div class='slideshow-container'>
+
+    <div class='slideshow-container' id="aboutme">
         <div class='mySlides fade'>
             <img class="slideshow-image" 
             src="./handwriting/impotant-to-me.png">
@@ -47,13 +49,13 @@
             <img class='slideshow-image'
             src="./handwriting/things-i-enjoy.png">
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'aboutme')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'aboutme')">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0, 'aboutme')"></span>
+            <span class="dot" onclick="currentSlide(1, 'aboutme')"></span>
+        </div>
     </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-      </div>
+
 </body>
 </html>

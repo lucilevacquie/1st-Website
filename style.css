@@ -30,12 +30,28 @@ body{
     position: relative;
     margin: auto;
 }
+.slideshow-container-paint {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slideshow-container-travel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
 .slideshow-image{
     width: 100%;
     padding: 2rem 20%;
     box-sizing: border-box;
 }
 .mySlide {
+    display: none;
+}
+.mySlidePaint {
+    display: none;
+}
+.mySlideTravel {
     display: none;
 }
 .prev, .next {
@@ -141,6 +157,9 @@ body{
     outline: none;
     transition: 0.4s;
 }
+.img-titles{
+    width:70%;
+}
 .active, .accordion:hover{
     background-color:rgba(255, 210, 87, 0.7);
 }
@@ -151,6 +170,16 @@ body{
     text-align: justify;
 }
 
-.title-uni{
+.subtitles{
     text-align: center;
+    font-size: 2rem;
+}
+
+.flowerInNight{
+    transform: rotate(90deg);
+    width: 90%;
+}
+.deer{
+    width: 70%;
+    margin: auto;
 }

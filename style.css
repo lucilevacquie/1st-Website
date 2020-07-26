@@ -229,6 +229,9 @@ i.active, label.active{
     .panel{
         padding: 0;
     }
+    .accordion-wrapper{
+        width: 90%;
+    }
     .slideshow-container {
         max-width: 310px;
     }

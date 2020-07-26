@@ -230,16 +230,22 @@ i.active, label.active{
         padding: 0;
     }
     .slideshow-container {
-        max-width: 300px;
+        max-width: 310px;
+    }
+    .prev{
+        padding: 0;
+    }
+    .next{
+        padding: 0;
     }
     .slideshow-container-paint {
-        max-width: 300px;
+        max-width: 310px;
     }
     .slideshow-container-travel {
-        max-width: 300px;
+        max-width: 310px;
     }
     .slideshow-container-coding {
-        max-width: 300px;
+        max-width: 310px;
     }
     .slideshow-image{
         max-width: 290px;

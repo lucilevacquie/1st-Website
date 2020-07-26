@@ -73,30 +73,32 @@ function showSlides(){
 }
 
 function onPageLoad(){
-    highlightCurrentLink()
+    // highlightCurrentLink()
     showSlides()
     accordion()
 }
 window.onload=onPageLoad
 
-function highlightCurrentLink(){
-    //first we need to get the current address (eg: http://lucile.com/aboutme.html)
-    var currentURL=document.URL
-    //then we need to find the position of the last occurence of /
-    //this will return us the position of the '/' in '/aboutme.html'
-    //then we want to +1 to index so that we get the position of the 'a' in 'aboutme.html'
-    var index=currentURL.lastIndexOf('/')+1
-    //next we pass the index to substring() to return the value 'aboutme.html'
-    //substring returns the part of the string AFTER the index we pass in
-    //eg http://lucile.com/   => aboutme.html <= this last part is a sustring
-    var path=currentURL.substring(index)
-    //now we can find all 'a' element that have the href value 'aboutme.html'
-    var currentLinks = document.querySelectorAll('a[href="'+path+'"]')
-    //highlight the 'a' element containing the href value 'aboutme.html'
-    currentLinks.forEach(function(link){
-        link.className += ' highlight-link'
-    })
-}
+// function highlightCurrentLink(){
+//     //first we need to get the current address (eg: http://lucile.com/aboutme.html)
+//     var currentURL=document.URL
+//     //then we need to find the position of the last occurence of /
+//     //this will return us the position of the '/' in '/aboutme.html'
+//     //then we want to +1 to index so that we get the position of the 'a' in 'aboutme.html'
+//     var index=currentURL.lastIndexOf('/')+1
+//     //next we pass the index to substring() to return the value 'aboutme.html'
+//     //substring returns the part of the string AFTER the index we pass in
+//     //eg http://lucile.com/   => aboutme.html <= this last part is a sustring
+//     var path=currentURL.substring(index)
+//     //now we can find all 'a' element that have the href value 'aboutme.html'
+//     var currentLinks = document.querySelectorAll('a[href="'+path+'"]')
+//     //highlight the 'a' element containing the href value 'aboutme.html'
+//     currentLinks.forEach(
+//         function(link){
+//         link.className += ' highlight-link'
+//         }
+//     )
+// }
 
 function accordion(){
     var acc=document.getElementsByClassName('accordion');

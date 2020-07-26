@@ -1,7 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+}
+
 body{
     background:url('asset/lightpaperfibers/lightpaperfibers_@2X.png');
     width:100%;
     font-family: 'Antic Slab', serif;
+    padding: 1rem;
 }
 
 #navbar{
@@ -92,9 +101,9 @@ nav {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
+/* .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-}
+} */
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -198,7 +207,7 @@ i.active, label.active{
 
 @media(max-width:500px){ 
     #navbar{
-        flex-direction: column;
+        flex-flow: row wrap;
     }
     #aboutme-title, #experience-title, #education-title{
         width: 100px;
@@ -206,11 +215,19 @@ i.active, label.active{
     #hobbies-title, #contact-title{
         width: 75px;
     }
-    .highlight-link{
-        margin-right: 20rem;
+    .nav-link{
+        margin-right: 1rem;
     }
-    #presentation{
-        margin: 1rem 2rem;
+    .presentation{
+        padding: 2px;
+        margin: 1rem 0;
+        text-align: justify;
+    }
+    .img-titles{
+        width: 90%;
+    }
+    .panel{
+        padding: 0;
     }
     .slideshow-container {
         max-width: 300px;
@@ -223,6 +240,9 @@ i.active, label.active{
     }
     .slideshow-container-coding {
         max-width: 300px;
+    }
+    .slideshow-image{
+        max-width: 290px;
     }
     #email{
         font-size: 2rem;

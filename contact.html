@@ -5,6 +5,9 @@
     <script src='script.js'></script>
     <title>Contact</title>
     <link href='https://fonts.googleapis.com/css?family=Antic Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
     body {
         font-family: 'Antic Slab';
@@ -13,54 +16,44 @@
 </head>
 <body>
     <nav id='navbar'>
-        <a class='aboutme-title'
+        <a class="nav-link"
         href='index.html'>
-        <img src="./handwriting/about-me-title-2.png"
-        width="200px">
+        <img id='aboutme-title' src="./handwriting/about-me-title-2.png">
         </a>
-        <a class='experience-title'
+        <a class="nav-link"
         href='experiences.html'>
-        <img src='./handwriting/experiences-title-2.png'
-        width="200px">
+        <img id='experience-title' src='./handwriting/experiences-title-2.png'>
         </a>
-        <a class='education-title'
+        <a class="nav-link"
         href='education.html'>
-        <img src='./handwriting/education-title-2.png'
-        width='200px'>
+        <img id='education-title' src='./handwriting/education-title-2.png'>
         </a>
-        <a class='hobbies-title'
+        <a class="nav-link"
         href='hobbies.html'>
-        <img src='./handwriting/hobbies-title2.png'
-        width="150px">
+        <img id='hobbies-title' src='./handwriting/hobbies-title2.png'>
         </a>
-        <a class='contact-title'
+        <a class="nav-link"
         href='contact.html'>
-        <img src='./handwriting/contact-title-2.png'
-        width="150px">
+        <img id='contact-title' src='./handwriting/contact-title-2.png'>
         </a>
     </nav>
 
-    <div >
-        Name
-        <input placeholder='Name'>
+    <div class="subtitles">
+        If you have any questions, comments or even advices: it's just here!
     </div>
-    <div>
-        Email address
-        <input placeholder='Email'>
+    <div id="email">
+        <a href="mailto:lucile.vacquie@gmail.com">lucile.vacquie@gmail.com</a>
     </div>
-    <div>
-        Message
-        <textarea placeholder='Message'
-        style='width:690px;height:250px;'>
-        </textarea>
+    <div class="subtitles">
+        For more informations
     </div>
-    <div 
-    class='vertical-align-msg'
-    style="text-align: center;
-    background-color: transparent;">
-        <button class='send-button'>
-            Send the message
-        </button>
+    <div id="contact-links">
+        <a href="https://www.linkedin.com/in/lucile-vacqui%C3%A929/" target="_blank">
+            <img id="linkedin" src="./asset/linkedIn.png" alt="LinkedIn page">
+        </a>
+        <a href="https://www.instagram.com/lucile_vcq/" target="_blank">
+            <img id="instagram" src="./asset/instagram.png" alt="Instagram page">
+        </a>
     </div>
 </body>
 </html>

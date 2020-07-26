@@ -9,53 +9,52 @@
 
 <body>
     <nav id='navbar'>
-        <a class='aboutme-title'
+        <a class="nav-link"
         href='index.html'>
-        <img src="./handwriting/about-me-title-2.png"
-        width="200px">
+        <img id='aboutme-title' src="./handwriting/about-me-title-2.png">
         </a>
-        <a class='experience-title'
+        <a class="nav-link"
         href='experiences.html'>
-        <img src='./handwriting/experiences-title-2.png'
-        width="200px">
+        <img id='experience-title' src='./handwriting/experiences-title-2.png'>
         </a>
-        <a class='education-title'
+        <a class="nav-link"
         href='education.html'>
-        <img src='./handwriting/education-title-2.png'
-        width='200px'>
+        <img id='education-title' src='./handwriting/education-title-2.png'>
         </a>
-        <a class='hobbies-title'
+        <a class="nav-link"
         href='hobbies.html'>
-        <img src='./handwriting/hobbies-title2.png'
-        width="150px">
+        <img id='hobbies-title' src='./handwriting/hobbies-title2.png'>
         </a>
-        <a class='contact-title'
+        <a class="nav-link"
         href='contact.html'>
-        <img src='./handwriting/contact-title-2.png'
-        width="150px">
+        <img id='contact-title' src='./handwriting/contact-title-2.png'>
         </a>
     </nav>
 
-    <div class='subtitles'>
+    <div class="subtitles">
         Painting and drawing
     </div>
 
     <div class='slideshow-container' id="paint">
         <div class='mySlides fade'>
             <img class="slideshow-image" 
-            src="./asset/DSC_0610.jpg">
+            src="./asset/space.jpg">
         </div>
         <div class='mySlides fade flowerInNight'>
             <img class='slideshow-image'
-            src="./asset/20200426_190123.jpg">
+            src="./asset/flowerInTheNight.jpg">
         </div>
         <div class='mySlides fade'>
             <img class='slideshow-image'
-            src="./asset/20200418_135122.jpg">
+            src="./asset/moon.jpg">
         </div>
         <div class='mySlides fade deer'>
             <img class='slideshow-image'
-            src="./asset/IMG-20200427-WA0001-2.jpg">
+            src="./asset/deer.jpg">
+        </div>
+        <div class='mySlides fade deer'>
+            <img class='slideshow-image'
+            src="./asset/alien.jpg">
         </div>
         <a class="prev" onclick="plusSlides(-1, 'paint')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'paint')">&#10095;</a>
@@ -64,26 +63,85 @@
             <span class="dot" onclick="currentSlide(1, 'paint')"></span>
             <span class="dot" onclick="currentSlide(2, 'paint')"></span>
             <span class="dot" onclick="currentSlide(3, 'paint')"></span>
+            <span class="dot" onclick="currentSlide(4, 'paint')"></span>
         </div>
     </div>
 
     <br>
 
-    <div class='subtitles'>
-        Traveling 
+    <div class="subtitles">
+        Traveling
     </div>
     <div class='slideshow-container' id="travel">
         <div class='mySlides fade'>
             <img class="slideshow-image" 
-            src="./handwriting/amsterdam2.png">
+            src="./asset/laccomo.jpg">
+            <div class="legend">
+                Lac Como, Italy - March 2018
+            </div>
         </div>
         <div class='mySlides fade'>
             <img class='slideshow-image'
-            src="./handwriting/berlin-mur2.png">
+            src="./asset/glasgow.jpg">
+            <div class="legend">
+                Glasgow, Scotland - August 2018
+            </div>
         </div>
         <div class='mySlides fade'>
             <img class='slideshow-image'
-            src="./handwriting/berlin2.png">
+            src="./asset/fez.jpg">
+            <div class="legend">
+                Fès, Morocco - November 2018
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/chefchaouen.jpg">
+            <div class="legend">
+                Chefchaouen, Morocco - November 2018
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/berlinmur.jpg">
+            <div class="legend">
+                The wall, Berlin - June 2019
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/amsterdam.jpg">
+            <div class="legend">
+                Amsterdam - July 2019
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/galway.jpg">
+            <div class="legend">
+                Galway, Ireland - July 2019
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/mohercliff.jpg">
+            <div class="legend">
+                Cliff of Moher, Ireland - July 2019
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/melbourne.jpg">
+            <div class="legend">
+                Melbourne, Australia - Oct 2019
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/apostle.jpg">
+            <div class="legend">
+                The 12 Apostles, Australia - Nov 2019
+            </div>
         </div>
         <a class="prev" onclick="plusSlides(-1, 'travel')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'travel')">&#10095;</a>
@@ -91,7 +149,69 @@
             <span class="dot" onclick="currentSlide(0, 'travel')"></span>
             <span class="dot" onclick="currentSlide(1, 'travel')"></span>
             <span class="dot" onclick="currentSlide(2, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(3, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(4, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(5, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(6, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(7, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(8, 'travel')"></span>
+            <span class="dot" onclick="currentSlide(9, 'travel')"></span>
         </div>
-    </div>    
+    </div>
+
+    <div class="subtitles">
+        Web development (with FreeCodeCamp)
+    </div>
+
+    <div class='slideshow-container' id="coding">
+        <div class='mySlides fade'>
+            <img class="slideshow-image" 
+            src="./asset/cheese-project.png">
+            <div class="legend">
+                Survey form - May 2020
+            </div>
+            <div class="legend">
+                <a href="https://github.com/lucilevacquie/Survey-form-challenge.git" target="_blank">Link to my Github</a>
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/technical-coffee.png">
+            <div class="legend">
+                Technical documentation page - May 2020
+            </div>
+            <div class="legend">
+                <a href="https://github.com/lucilevacquie/Technical-documentation-page-challenge.git" target="_blank">Link to my Github</a>
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/candee-yankles.png">
+            <div class="legend">
+                Product landing page - July 2020
+            </div>
+            <div class="legend">
+                <a href="https://github.com/lucilevacquie/Product-landing-page-challenge.git" target="_blank">Link to my Github</a>
+            </div>
+        </div>
+        <div class='mySlides fade'>
+            <img class='slideshow-image'
+            src="./asset/portfolio.png">
+            <div class="legend">
+                Portfolio - May 2020
+            </div>
+            <div class="legend">
+                <a href="https://github.com/lucilevacquie/Portfolio-challenge.git" target="_blank">Link to my Github</a>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 'coding')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'coding')">&#10095;</a>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0, 'coding')"></span>
+            <span class="dot" onclick="currentSlide(1, 'coding')"></span>
+            <span class="dot" onclick="currentSlide(2, 'coding')"></span>
+            <span class="dot" onclick="currentSlide(3, 'coding')"></span>
+        </div>
+    </div>  
 </body>
 </html>

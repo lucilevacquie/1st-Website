@@ -3,6 +3,7 @@ body{
     width:100%;
     font-family: 'Antic Slab', serif;
 }
+
 #navbar{
     display: flex;
     flex-direction: row;
@@ -10,10 +11,24 @@ body{
     padding-top: 10px;
     flex-wrap: wrap;
 }
-@media(max-width:500px){
-    #navbar{
-        flex-direction: column;
-    }
+nav {
+   background-color: transparent!important;
+   box-shadow: none!important;
+   height: auto!important;
+   line-height: unset!important;
+}
+#aboutme-title, #experience-title, #education-title{
+    width: 200px;
+}
+#hobbies-title, #contact-title{
+    width: 150px;
+}
+
+.highlight-link{
+    background-color:rgba(252, 135, 119, 0.5);
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding:0 2px 0 2px;
 }
 .lucile-vacquie-title{
     margin: auto;
@@ -24,6 +39,11 @@ body{
     border-radius: 10px;
     text-align: center;
     background-color:rgba(252, 192, 119, 0.5);
+}
+.presentation{
+    font-family: 'Antic Slab', serif;
+    margin: 1rem 6rem;
+    text-align: center;
 }
 .slideshow-container {
     max-width: 1000px;
@@ -40,19 +60,19 @@ body{
     position: relative;
     margin: auto;
 }
+.slideshow-container-coding {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
 .slideshow-image{
-    width: 100%;
-    padding: 2rem 20%;
+    max-height: 400px;
+    margin: auto;
     box-sizing: border-box;
 }
-.mySlide {
-    display: none;
-}
-.mySlidePaint {
-    display: none;
-}
-.mySlideTravel {
-    display: none;
+
+.mySlides{
+    text-align: center;
 }
 .prev, .next {
     cursor: pointer;
@@ -118,27 +138,6 @@ body{
     from{opacity: 0.4;}
     to{opacity: 1;}
 }
-.highlight-link{
-    background-color:rgba(252, 135, 119, 0.5);
-    border-radius: 10px;
-    margin-bottom: 8px;
-    padding:0 2px 0 2px;
-}
-
-.send-button{
-    background-color: gray;
-    color:whitesmoke;
-    font-size: 24px;
-    margin:auto;
-    border-radius: 10px;
-    width: 300px;
-    height: 50px;
-}
-.vertical-align-msg{
-    display: flex;
-    align-content: inherit;
-}
-
 .accordion-wrapper{
     width: 70%;
     margin:auto;
@@ -172,14 +171,64 @@ body{
 
 .subtitles{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
-.flowerInNight{
-    transform: rotate(90deg);
-    width: 90%;
+i.active, label.active{
+    background-color: transparent!important;
 }
-.deer{
-    width: 70%;
-    margin: auto;
+
+#email{
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem;
+}
+
+#contact-links{
+    text-align: center;
+}
+#linkedin{
+    width: 4rem;
+}
+#instagram{
+    width: 4rem;
+}
+
+@media(max-width:500px){ 
+    #navbar{
+        flex-direction: column;
+    }
+    #aboutme-title, #experience-title, #education-title{
+        width: 100px;
+    }
+    #hobbies-title, #contact-title{
+        width: 75px;
+    }
+    .highlight-link{
+        margin-right: 20rem;
+    }
+    #presentation{
+        margin: 1rem 2rem;
+    }
+    .slideshow-container {
+        max-width: 300px;
+    }
+    .slideshow-container-paint {
+        max-width: 300px;
+    }
+    .slideshow-container-travel {
+        max-width: 300px;
+    }
+    .slideshow-container-coding {
+        max-width: 300px;
+    }
+    #email{
+        font-size: 2rem;
+        margin: auto;
+    }
+    .subtitles{
+        font-size: 1.5rem;
+    }
 }
